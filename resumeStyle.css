@@ -1,0 +1,223 @@
+body{
+	
+	  margin: 0px;
+	  font-size: 30px;
+	  font-family: sans-serif;
+    
+}
+
+ 
+/*Body Header*/
+
+#body-header{
+	height: 65vh;
+	opacity: 0.8;
+	background-image: url(image/macbook_mouse.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top:1.2rem;
+
+}
+ 
+
+/*horizontal lists*/
+
+.horizontal-list{
+	list-style: none;
+	padding-left:0px ;
+	margin: 0px;
+
+}
+.horizontal-list li{
+	display: inline-block;
+	margin: 0px 8px 8px 0px;
+	    font-weight: 100;
+    font-size: 0.9rem;
+}
+.horizontal-list li a{
+	color: white;
+   text-decoration: none;
+ 
+}
+
+.nav-menu li a{
+  
+   transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+	color: lightgrey;
+   border-bottom: 1px black solid;
+ 
+}
+
+
+.text-center{
+	text-align: center;
+}
+
+/*Name and Social Icons*/
+
+#name-social-container{
+	margin-top: 20vh;
+}
+
+#my-name{
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	margin-bottom: 0.5rem;
+	color: white;
+	font-weight: 700;
+
+}
+ .social-icons li a i{
+/* 	color: red;*/
+ 	padding: 10px;
+ 	font-size: 1rem;
+ 	border-radius: 50%;
+ 
+ }
+ 
+
+ .social-icons li a i:hover{
+   box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+ }
+
+/* Section*/
+
+section{
+	width: 100%;
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+/*	height: 75vh;    only for checking odd even*/
+}
+
+
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+section:target{
+	background-color: cyan;
+}
+
+
+.section-heading{
+	width: auto;
+/*	margin: 10px auto;  there is no need because align-items: center;*/
+	padding:20px 10px 10px ;
+	font-weight: 400;
+}
+.section-heading span{
+	display: inline-block;
+	color: #2857a4;
+  font-size: 40px;
+  padding-top: 10px;
+  margin-right: .5rem;
+}
+/* About*/
+
+#about{
+	height: auto;
+	width: 100vw;
+	position: relative;
+}
+
+
+/*MyImage  */
+ #my-image{
+ 	height: 12rem;
+ 	width :12rem;
+ 	margin: auto;
+ 	margin-top: -17vh;
+
+ }
+  #my-image img{
+  	height: 100%;
+  	width: 100%;
+  	border-radius: 50%;
+  	border: 3px solid white;
+  	box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+  
+/*  About Paragraph*/
+  #about-para{
+  	padding: 10px;
+  	font-size: 1.1rem;
+  	line-height: 28px;
+    height: auto;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    text-align: justify;
+    color: grey;
+    font-family:  Arial, Helvetica, sans-serif;
+  }
+
+
+/*  Skill Display*/
+   
+
+   #skill-display{
+   	width: 70%;
+   	height: 200px;
+/*   	border: 2px red solid;   yeh v not need */
+  display:  flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+
+
+   }
+  .skill-progress{
+  	width:7rem;
+  	height:1.4rem;
+  	background-color: lightgrey;
+  	border-radius: .8rem;
+/*  	border: 2px solid black  ;  only for understanding */
+
+  }
+  .skill-progress>div{
+/*  	pseudo class because if use simple div it is apply whole div here only want to apply direct child of skill progress*/
+  	border-radius: 20px 0px 0px 20px;
+  }
+  .skill-name span{
+  	color: white;
+  	font-size: 1rem;
+  	margin-left: 10px;
+
+  }
+
+
+   
+/*   common Margin class*/
+
+  .mb75px{
+  	margin-bottom: 75px;
+  }
+
+/*    common color class*/
+
+  .text-highlighted{
+  	color:#2857a4;
+  	font-weight: 600;
+ }
+ .mb-blue{
+ 	background-color: #2857a4;
+ }
+  
+/*  percentage class*/
+
+ .eighty-five-percent{
+ 	width: 85%;
+ 	height: inherit;
+
+ }
